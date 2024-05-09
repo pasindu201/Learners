@@ -1,35 +1,28 @@
 import React from "react";
 
 const BookCard = (props) => {
-  const { imgUrl, title, lesson, students, rating } = props.item;
+  const { image, bookName, description, author, book } = props.item;
+
+  // Create a data URL for the PDF file
+  const pdfDataUrl = `data:application/pdf;base64,${book}`;
 
   return (
-    <div className="single__course__item">
-      <div className="course__img">
-        <img src={imgUrl} alt="" className="w-100" />
-      </div>
-
-      <div className="course__details">
-        <h6 className="course__title mb-4">{title}</h6>
-
-        <div className=" d-flex justify-content-between align-items-center">
-          <p className="lesson d-flex align-items-center gap-1">
-            <i class="ri-book-open-line"></i> {lesson} Lessons
-          </p>
-
-          <p className="students d-flex align-items-center gap-1">
-            <i class="ri-user-line"></i> {students}K
-          </p>
-        </div>
-
-        <div className=" d-flex justify-content-between align-items-center">
-          <p className="rating d-flex align-items-center gap-1">
-            <i class="ri-star-fill"></i> {rating}K
-          </p>
-
-          <p className="enroll d-flex align-items-center gap-1">
-            <a href="#"> Enroll Now</a>
-          </p>
+    <div className="col-lg-2 col-md-3 my-3 text-center shadow">
+      <div className="card shadow" style={{ width: "14rem" }}>
+        <img
+          src={`data:image/jpeg;base64,${image}`}
+          className="card-img-top"
+          alt="..."
+          style={{ height: "300px" }}
+          />                     
+        <div className="card-body">
+          <h6 className="card-title">{bookName}</h6>
+          <p className="card-text">By : {author}</p>
+          <hr/>         
+          <p className="card-text">{description}</p>
+          <a href={pdfDataUrl} download={`${bookName}.pdf`}>
+            <button className="btn btn-primary mx-3 mb-3">Download</button>
+          </a>
         </div>
       </div>
     </div>

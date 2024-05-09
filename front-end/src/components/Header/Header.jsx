@@ -5,7 +5,7 @@ import "./header.css";
 const navLinks = [
   {
     display: "Home",
-    url: "#",
+    url: "/",
   },
   {
     display: "About",
@@ -17,8 +17,8 @@ const navLinks = [
     url: "#",
   },
   {
-    display: "Books",
-    url: "#",
+    display: "Book Store",
+    url: "books",
   },
 ];
 

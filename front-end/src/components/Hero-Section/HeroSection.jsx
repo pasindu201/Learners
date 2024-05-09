@@ -16,7 +16,6 @@ const HeroSection = () => {
               <p className="mb-5">
                 Start your journey towards a new career with <br /> an exclusive Professional Certificate <br /> from Learners<br/>              
               </p>
-              <h6 className="mb-5"> 7-day free trial | Starting at $49 per month</h6>
             </div>
             <div >
               <button className="btn">Explor cariers</button>

@@ -1,0 +1,36 @@
+.testimonial__content h2 {
+  font-weight: 600;
+}
+
+.image {
+  width:500px;
+  border-radius: 10px;
+}
+
+.single__testimonial1 {
+  height: 400px;
+  background-image: url("../../assests/images/book-store1.jpg");
+  background-size: cover;
+  background-position: center; 
+}
+
+.single__testimonial2 {
+  height: 400px;
+  background-image: url("../../assests/images/book-store2.jpg");
+  background-size: cover;
+  background-position: center; 
+}
+
+.single__testimonial3 {
+  height: 400px;
+  background-image: url("../../assests/images/branding.png");
+  background-size: cover;
+  background-position: center; 
+}
+
+.single__testimonial4 {
+  height: 400px;
+  background-image: url("../../assests/images/books2.jpg");
+  background-size: cover;
+  background-position: center; 
+}
