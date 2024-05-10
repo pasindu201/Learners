@@ -87,7 +87,7 @@ public class CourseController
             }
 
             if (!image.isEmpty()) {
-                Blob blobImage = new SerialBlob(profilePicture.getBytes());
+                Blob blobImage = new SerialBlob(image.getBytes());
                 courseEntity.setImage(blobImage);
             }
 

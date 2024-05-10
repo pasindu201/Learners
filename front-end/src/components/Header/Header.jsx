@@ -9,16 +9,20 @@ const navLinks = [
   },
   {
     display: "About",
-    url: "#",
+    url: "/",
   },
 
   {
     display: "Courses",
-    url: "#",
+    url: "/",
   },
   {
     display: "Book Store",
     url: "books",
+  },
+  {
+    display: "Admin",
+    url: "",
   },
 ];
 

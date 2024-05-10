@@ -16,14 +16,20 @@ const BookCard = (props) => {
           style={{ height: "300px" }}
           />                     
         <div className="card-body">
-          <h6 className="card-title">{bookName}</h6>
-          <p className="card-text">By : {author}</p>
-          <hr/>         
-          <p className="card-text">{description}</p>
+        <div className="d-flex align-items-center">
+          <h6 className="card-title me-2">{bookName}</h6>  {/* Add margin-end for space */}
+          <h6 className="rating d-flex align-items-center ms-auto">
+              <i className="ri-star-fill me-1"></i> {100}K
+          </h6>
+        </div>     
+          <p className="card-text mb-1">By: {author}</p>
+          <hr className="my-1" />         
+          <p className="card-text mb-1">{description}</p>
           <a href={pdfDataUrl} download={`${bookName}.pdf`}>
-            <button className="btn btn-primary mx-3 mb-3">Download</button>
+              <button className="btn btn-primary mx-2 mb-2">Download</button>
           </a>
         </div>
+
       </div>
     </div>
   );

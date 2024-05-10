@@ -15,7 +15,7 @@ const Video = ({ video }) => {
                     src={`data:video/mp4;base64,${video.video}`}
                     controls
                     loop
-                    style={{ width: '1300px', marginBottom:'60px' }}
+                    style={{ width: '1260px', marginBottom:'60px' }}
                 />
             </div>  
         </div>
